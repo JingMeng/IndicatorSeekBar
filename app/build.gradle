@@ -1,21 +1,23 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    namespace 'com.warkiz.indicatorseekbar'
+    compileSdk 34
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.warkiz.indicatorseekbar"
-        minSdkVersion 24
-        targetSdkVersion 27
+        minSdk 24
+        targetSdk 34
         versionCode 3
         versionName "2.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    
     }
 }
 
@@ -24,3 +26,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:design:27.1.1'
 }
+
+
+
+
